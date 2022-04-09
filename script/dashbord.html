@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        /* .sidenav{
+            background-color: lightslategrey;
+            height: 100%;
+            width: auto;
+            top: 0;
+            left: 0;
+
+        } */
+        .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.you{
+          float: left;
+          padding: 10px;
+          font-size: 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          
+          
+
+      }
+      
+       .parae{
+        
+          width: 60px;
+          height: 60px;
+          border-color: white;
+          border-style: dotted;
+          border-bottom-color: aquamarine;
+          
+       }
+      .you2{
+          /* float:right; */
+          position: relative;
+          background-image: url("back.webp");
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 25px;
+          background-position: center;
+          background-clip: content-box;
+          
+      }
+      .you3{
+          background-position: center;
+      }
+      .jup{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          margin: 15px;
+          padding: 70px;
+      }
+      .num{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 40px;
+        border-width: 5px;
+        border-color: white;
+}
+.jyy{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.vrn{
+    border-radius: 30px;
+    width: 100px;
+    height: 60px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- <div class="row content bg-success">
+          <div class="col-sm-3 sidenav hidden-xs bg-success">
+            <img src="high.jpg" style="width: 50px; height: 50px;">
+            <ul class="nav nav-pills nav-stacked">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+               <li class="active"><a href="#section1">Dashboard</a></li> -->
+              <!-- <li><a href="#section2">one</a></li>
+              <li><a href="#section3">two</a></li>
+              <li><a href="#section3">three</a></li>
+              <li><a href="#section2">Age</a></li>
+              <li><a href="#section3">Gender</a></li>
+              <li><a href="#section3">Geo</a></li>
+              <li><a href="#section2">one</a></li>
+              <li><a href="#section3">two</a></li>
+              <li><a href="#section3">three</a></li>
+              <li><a href="#section2">Age</a></li>
+              <li><a href="#section3">Gender</a></li>
+              <li><a href="#section3">Geo</a></li>
+            </ul><br>
+          </div>
+          <br>  -->
+          <div id="mySidenav" class="sidenav" style="color: gold;">
+            <a class="closebtn" onclick="closeNav()"><img src="cross.png" width="40px" height="40px"></a>
+            <a href="https://www.fnp.com/chocolates">About</a>
+            <a href="https://www.fnp.com/chocolates">Services</a>
+            <a href="https://www.fnp.com/chocolates">section</a>
+            <a href="https://www.fnp.com/chocolates">facebook</a>
+            <a href="https://www.fnp.com/chocolates">whatsapp</a>
+            <a href="https://www.fnp.com/chocolates">Services</a>
+            <a href="https://www.fnp.com/chocolates">highdata</a>
+            <a href="https://www.fnp.com/chocolates">justify-content</a>
+            <a href="https://www.fnp.com/chocolates">instrumental</a>
+            <a href="https://www.fnp.com/chocolates">Services</a>
+            <a href="https://www.fnp.com/chocolates">Clients</a>
+            <a href="https://www.fnp.com/chocolates">Contact</a>
+          </div>
+
+          
+          <div class="col-sm-9">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="nh.png" width="40px" height="40px"></span>
+
+              <div class="well">
+              <div class="row">
+                  <div class="col-sm-6">
+                      Since early times, human beings have been trying to understand their surroundings. Early Indian philosophers classified matter in the form of five basic element. According to them everything, living or non- living, was made up of these five basic elements.
+                  </div>
+                  <div class="col-sm-6">
+                      <img src="ima.jpg" style="width: 200px; height: 80px;">
+                  </div>
+              </div>
+              </div>
+            
+      
+         
+              <!-- <h4>Dashboard</h4>
+              <p>Some text..</p> -->
+            
+            <div class="row">
+              <div class="col-sm-3">
+                <div class="well">
+                  <h4>heading</h4>
+                  <p>Since early times, human beings have been trying to understand their surroundings.</p> 
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="well">
+                  <h4>heading</h4>
+                  <p>Since early times, human beings have been trying to understand their surroundings</p> 
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="well">
+                  <h4>Sessions</h4>
+                  <p>10 Million Since early times, human beings have been trying to understand their surroundings</p> 
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="well">
+                  <h4>Bounce</h4>
+                  <p>30% Since early times, human beings have been trying to understand their surroundings</p> 
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="well">
+                  <p>Since early times, human beings have been trying to understand their surroundings</p> 
+                  <p>Since early times, human beings have been trying to understand their surroundings</p> 
+                   
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="well">
+                  <p>Since early times, human beings have been trying to understand their surroundings</p> 
+                  <p>Since early times, human beings have been trying to understand their surroundings</p> 
+      
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="well">
+                  <p>Since early times, human beings have been trying to understand their surroundings</p> 
+                  <p>Since early times, human beings have been trying to understand their surroundings</p> 
+                  
+              
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-8">
+                <div class="well">
+                  <p>the element 30% Since early times, human beings have been trying to understand their surroundings
+                      the 25 March feast which coincided with Palm Sunday that year. The theme of the hymn suits both occasions, in a spirit of longing expectation of an arrival
+                   s</p> 
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="well">
+                    <h1>The human</h1> 
+                  <p>Text 30% Since early times, human beings have been trying to understand their surroundings
+                    
+                  </p> 
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+                <div class="well">
+                   <h1>The Element</h1> 
+                    
+                  the 25 March feast which coincided with Palm Sunday that year.The theme of the hymn suits both occasions, in a spirit of longing expectation of an arrival. The hymn was paraphrased by a contemporary poet who retained its first and last stanzas unchanged, set as a chorale fantasia and the closing chorale, but transformed the inner stanzas into a sequence of alternating recitatives and arias. Bach scored the work for three vocal soloists, a four-part choir and a Baroque instrumental ensemble of two horns, two oboes da caccia, two solo violins (part pictured), strings and continuo. It is the last chorale cantata of his second cantata
+                </div>
+            </div>
+          
+          <div class="jup">
+            <div class="under">
+                <img class="num" src="ima.jpg" width="90px" height="100px" style="margin-left: 18px;"/>
+                <h1>webpage creation</h1>
+                <p style="padding: 12px;"> The world's leading conservation organization, WWF works in 100 countries 
+                 and is supported by more than one million members in the United States and 
+                 close to five million globally. For nearly 60 years, WWF has been protecting the future of nature. 
+                 The world's leading conservation organization, WWF works in 100 countries 
+                 and is supported by more than one million </p>
+ 
+ 
+            </div>
+            <div class="onder">
+                <img class="num" src="ima.jpg" width="90px" height="100px" style="margin-left: 18px;"/>
+                <h1>creation webpage</h1>
+                <p style="padding: 12px;"> The world's leading conservation organization, WWF works in 100 countries 
+                 and is supported by more than one million members in the United States and 
+                 close to five million globally. For nearly 60 years, WWF has been protecting the future of nature. 
+                 The world's leading conservation organization, WWF works in 100 countries 
+                 and is supported by more than one million </p>
+            </div>
+            <div class="under">
+             <img class="num" src="ima.jpg" width="90px" height="100px" style="margin-left: 18px;"/>
+             <h1>webpage creation</h1>
+             <p style="padding:12px;"> The world's leading conservation organization, WWF works in 100 countries 
+              and is supported by more than one million members in the United States and 
+              close to five million globally. For nearly 60 years, WWF has been protecting the future of nature. 
+              The world's leading conservation organization, WWF works in 100 countries 
+              and is supported by more than one million </p>
+             </div>
+             </div>
+             <div class="jyy">
+                 <img style="margin: 60px;" src="ima.jpg" width="250px" height="250px"/>
+                 <p style="margin: 60px;">
+                      The world's leading conservation organization, WWF works in 100 countries 
+                      and is supported by more than one million members in the United States and 
+                      close to five million globally. For nearly 60 years, WWF has been protecting the future of nature. 
+                      The world's leading conservation organization, WWF works in 100 countries 
+                      The world's leading conservation organization, WWF works in 100 countries 
+                      and is supported by more than one million.The world's leading conservation organization, WWF works in 100 countries 
+                      and is supported by more than one million members in the United States and 
+                      close to five million globally. For nearly 60 years, WWF has been protecting the future of nature. 
+                      The world's leading conservation organization, WWF works in 100 countries 
+                      The world's leading conservation organization, WWF works in 100 countries 
+                      and is supported by more than one million.The world's leading conservation organization, WWF works in 100 countries 
+                      The world's leading conservation organization, WWF works in 100 countries 
+                      and is supported by more than one million. and is supported by more than one million.The world's leading conservation organization, WWF works in 100 countries 
+                      The world's leading conservation organization, WWF works in 100 countries 
+                      and is supported by more than one million. and is supported by more than one million. and is supported by more than one million.The world's leading conservation organization, WWF works in 100 countries 
+                      The world's leading conservation organization, WWF works in 100 countries 
+                      and is supported by more than one million.
+                      
+                      
+ 
+                     </p>
+             </div>
+          <!-- <div class="row">
+              <div class="col-sm-6">
+                <div class="well">
+                  <img src="ima.jpg" width="90px" height="100px">
+              </div>
+              
+              <div class="col-sm-6">
+                <p>the 25 March feast which coincided with Palm Sunday that year.The theme of the hymn suits both occasions the 25 March feast which coincided with Palm Sunday that year.The theme of the hymn suits both occasions,the 25 March feast which coincided with Palm Sunday that year.The theme of the hymn suits both occasions,</p>
+              </div>
+          </div>
+        </div>
+        </div>
+</div> -->
+</div>
+
+      </div>
+      <script>
+         function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+       }
+
+         function closeNav() {
+             document.getElementById("mySidenav").style.width = "0";
+} 
+      </script>
+
+</body>
+</html>

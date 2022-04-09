@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    class Categories {
+        constructor(songData) {
+            this.categoryName = songData.categoryName;
+             this.categoryDetails = songData.categoryDetails;
+        }
+         num(){
+             document.writeln(this.categoryName+" "+this.categoryDetails)
+        }
+    }
+    
+    // child class
+    class Song extends Categories {
+        constructor(songData) {
+            super(songData);
+            this.artist = songData.artist;
+        }
+    }
+    
+    const mySong = new Song({
+        artist: 'Artist',
+        categoryName: 'New Song',
+        categoryDetails: 2020
+    });
+    mySong.num();
+
+    
+   
+    </script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+    .container{
+        /* background-image: linear-gradient(skyblue,purple); */
+        background-image: url("ima.jpg");
+        width: 40vw;
+        height: 100vh;
+        position: relative;
+
+
+    }
+    .val{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+
+        <form>
+        
+<div class="container" style="color: white;">
+    <h1 style="text-align: center;">Registration Form</h1>
+            <div class="form-group">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" class="form-control" placeholder="enter your firstName" autocomplete="off" autofocus required><br><br>
+            <span id="user" class="text-danger" style="font-size: large;"></span>
+        </div>
+        <div class="form-group">
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" class="form-control" placeholder="enter your lastName" autocomplete="off" autofocus required><br><br>
+            <span id="user1" class="text-danger" style="font-size: large;"></span>
+            </div>
+
+            <div class="form-group">
+            <label for="quantity">Phone:</label>
+        
+            <input type="text" id="Phone" name="quantity" class="form-control" placeholder="enter your phone" autocomplete="off" autofocus required><br/><br/>
+            <span id="phn" class="text-danger" style="font-size: large;"></span>
+            </div>
+            <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="enter your email" class="form-control" autocomplete="off" autofocus required><br><br/>
+            <span id="em" class="text-danger" style="font-size: large;"></span>
+            </div>
+            <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd" placeholder="enter your password" class="form-control" autocomplete="off"><br><br>
+            <span id="pas" class="text-danger" style="font-size: large;"></span>
+            </div>
+         
+            
+             
+            <input type="submit" value="Submit" onclick="vadia()" class="val btn btn-success" formaction="file:///C:/script/dashbord.html">
+        
+          
+            
+        </div>
+          </form>
+          <script>
+            function vadia(){
+                var n = document.getElementById("fname").value;
+                var m = document.getElementById("lname").value;
+                var j = document.getElementById("Phone").value;
+                var p = document.getElementById("email").value; 
+                var u = document.getElementById("pwd").value;
+
+                if(n == ""){
+                    document.getElementById("user").innerHTML = "please fill out this field";
+                    return false;
+
+
+                }
+                if(!isNaN(n)){
+              document.getElementById('user').innerHTML=" **only characters are allowed";
+                   return false;
+              }
+              else{
+                document.getElementById('user').innerHTML="";
+              }
+               
+                if(m == ""){
+                    document.getElementById("user1").innerHTML = " **please fill out this field";
+                    return false;
+
+                }
+                if(!isNaN(m)){
+              document.getElementById('user1').innerHTML=" **only characters are allowed";
+                   return false;
+              }
+              else{
+                document.getElementById('user1').innerHTML="";
+              }
+               
+                if(j == ""){
+                    document.getElementById("phn").innerHTML = " **please fill out this field";
+                    return false;
+                }
+                if(isNaN(j)){
+                    document.getElementById("phn").innerHTML = " **please enter numbers only";
+                    return false;
+                }
+                if(j.length != 10){
+                    document.getElementById("phn").innerHTML = " **please enter the only 10 digits";
+                    return false;
+                
+            }
+               if(p == ""){
+                   document.getElementById('em').innerHTML=" **please fill email";
+                   return false;
+              }
+              if(p.indexOf('@') <=0){
+                document.getElementById('em').innerHTML=" **@ invalid position";
+                   return false;
+              }
+               if((p.charAt(p.length-4)!='.') && (p.charAt(p.length-3)!='.')){
+                document.getElementById('em').innerHTML=" **@. Invalid position";
+                   return false;
+              } else{
+                document.getElementById('em').innerHTML="";
+               }
+               if(u == ""){
+                    document.getElementById("pas").innerHTML = "please fill out this field";
+                    return false;
+
+
+                }
+                if(!isNaN(u)){
+              document.getElementById('pas').innerHTML=" **only characters are allowed";
+                   return false;
+              }
+              else{
+                document.getElementById('pas').innerHTML="";
+              }
+               
+              //  if(u == ""){
+              //      document.getElementById('pas').innerHTML=" **please fill out the field";
+              //      return false;
+              //   }
+                  // if(u.length<4){
+                  //   document.getElementById("pas").innerHTML = " **please enter the only 10 digits";
+                  //   return false;
+                  // }
+                  // else{
+                  //   document.getElementById('pas').innerHTML="";
+                  // }
+                
+              //      if(u.length > 5){
+              //   document.getElementById("pas").innerHTML = " **please enter the only 10 digits";
+              //   return false;
+
+              //    }
+               //   if(isNaN(u)){
+                //     document.getElementById("pas").innerHTML = " **please enter numbers only";
+                //     return false;
+                // }
+             
+            
+                   
+
+            //    var arr = []
+            //    var obj = arr.push(n,m,j,p,u);
+               
+            //   console.log(obj);
+          //     const person = {
+          //    firstName: n,
+          //    lastName: n,
+          //    phone : j,
+          //    email : p,
+          //    password : u
+          //  };
+          //  console.log(person);
+        }
+          </script>
+    </body>
+</html>
